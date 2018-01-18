@@ -1,0 +1,75 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global CSS
+@import "global.scss";
+
+// Components
+@import "masthead.scss";
+@import "social.scss";
+@import "bootstrap-overrides.scss";
+
+.content-wrapper{
+    width: 45vw;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-right: 25px;
+}
+
+.content-item{
+	background-color: rgba(224,224,224,0.6);
+	padding: 25px;
+    display: none;
+    border-radius: 7px;
+}
+
+.contact-icon{
+    display: inline-block;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.flexyBox{
+	    display: flex;
+	}
+}
+
+@media (max-width: 768px) {
+    .content{
+        padding: 10px;
+    }
+	.content-wrapper{
+        width: 100vw;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.video-container{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
